@@ -12,17 +12,17 @@ import 'dart:io';
 //   print(sum);
 // }
 
-// void main() {
-//   print('Введите сумму вклада');
-//   String v = stdin.readLineSync()!;
-//   int? deposit = int.tryParse(v);
-//   print('Введите срок депозита в годах');
-//   String s = stdin.readLineSync()!;
-//   int? srok = int.tryParse(s);
-//   double percent = 0.03;
-//   double itog = ((deposit! * percent) * srok! + deposit);
-//   print(itog);
-// }
+void main() {
+  print('Введите сумму вклада');
+  String v = stdin.readLineSync()!;
+  int? deposit = int.tryParse(v);
+  print('Введите срок депозита в годах');
+  String s = stdin.readLineSync()!;
+  int? srok = int.tryParse(s);
+  double percent = 0.03;
+  double itog = ((deposit! * percent) * srok! + deposit);
+  print(itog);
+}
 
 // void main() {
 //   var i;
@@ -72,12 +72,12 @@ import 'dart:io';
 //   print(sum);
 // }
 
-void main() {
-  print('Введите число');
-  int a = int.parse(stdin.readLineSync()!);
-  int sum = 0;
-  for (int i = 0; i < a; i++) {
-    sum += i * i;
-  }
-  print(sum);
-}
+// void main() {
+//   print('Введите число');
+//   int a = int.parse(stdin.readLineSync()!);
+//   int sum = 0;
+//   for (int i = 0; i < a; i++) {
+//     sum += i * i;
+//   }
+//   print(sum);
+// }
