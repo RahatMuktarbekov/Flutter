@@ -23,8 +23,7 @@
 
 //   Phone({required this.number, required this.model, required this.weight});
 
-//   recieveCall() {
-//     String name = "Rahat";
+//   recieveCall(String name) {
 //     print('Звонит $name');
 //   }
 
