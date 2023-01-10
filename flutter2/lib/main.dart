@@ -60,47 +60,50 @@ class Contik extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        height: 48,
-        width: double.infinity,
-        decoration: BoxDecoration(
-            color: const Color(0xffFFFFFF),
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xff000000).withOpacity(0.06),
-                blurRadius: 15,
-                spreadRadius: 4,
-              )
-            ]),
-        child: Padding(
-          padding:
-              const EdgeInsets.symmetric(vertical: 14.83, horizontal: 22.5),
-          child: Row(
-            children: [
-              Icon(icon, size: 20),
-              const SizedBox(
-                width: 20,
-              ),
-              Text(
-                title,
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                  color: Color(0xff000000),
+    return Padding(
+      padding: const EdgeInsets.only(right: 30, left: 30),
+      child: Container(
+          height: 48,
+          width: double.infinity,
+          decoration: BoxDecoration(
+              color: const Color(0xffFFFFFF),
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xff000000).withOpacity(0.06),
+                  blurRadius: 15,
+                  spreadRadius: 4,
+                )
+              ]),
+          child: Padding(
+            padding:
+                const EdgeInsets.symmetric(vertical: 14.83, horizontal: 22.5),
+            child: Row(
+              children: [
+                Icon(icon, size: 20),
+                const SizedBox(
+                  width: 20,
                 ),
-              ),
-              Spacer(),
-              Text(
-                text,
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xff898A8D),
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xff000000),
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ));
+                Spacer(),
+                Text(
+                  text,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xff898A8D),
+                  ),
+                ),
+              ],
+            ),
+          )),
+    );
   }
 }
